@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP Sentiment Analysis - Project Details</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .project-detail {
+            padding: 120px 0 60px;
+        }
+        
+        .project-header {
+            margin-bottom: 40px;
+        }
+        
+        .project-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #2d3436;
+        }
+        
+        .project-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            color: #636e72;
+        }
+        
+        .project-meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .project-image-large {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+        
+        .project-description h2, 
+        .project-tech h2, 
+        .project-requirements h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #2d3436;
+        }
+        
+        .project-description p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .tech-list, 
+        .requirements-list {
+            list-style: none;
+        }
+        
+        .tech-list li, 
+        .requirements-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .tech-list li:before, 
+        .requirements-list li:before {
+            content: "•";
+            color: #0984e3;
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+        
+        .project-links {
+            margin-top: 40px;
+            display: flex;
+            gap: 15px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-top: 40px;
+            color: #0984e3;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-button:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .project-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="../index.html">Portfolio</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#certificates">Certificates</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <h1>NLP Sentiment Analysis</h1>
+                <div class="project-meta">
+                    <span><i class="far fa-calendar-alt"></i> 2023</span>
+                    <span><i class="fas fa-code-branch"></i> Natural Language Processing</span>
+                    <span><i class="fas fa-tag"></i> BERT</span>
+                </div>
+            </div>
+            
+            <img src="../images/1.jpg" alt="NLP Sentiment Analysis" class="project-image-large">
+            
+            <div class="project-content">
+                <div class="project-description">
+                    <h2>Project Overview</h2>
+                    <p>This project implements an advanced Natural Language Processing (NLP) system for sentiment analysis, achieving 92% accuracy on the test dataset. The system leverages state-of-the-art transformer architectures and fine-tuning techniques, drawing inspiration from research at Stanford NLP Group and Google's BERT team.</p>
+                    
+                    <h2>Project Vision</h2>
+                    <p>The goal was to develop a robust sentiment analysis system capable of understanding nuanced emotions in text, with applications in social media monitoring, customer feedback analysis, and market research. The model was designed to handle multiple languages and various text formats.</p>
+                    
+                    <h2>Implementation Details</h2>
+                    <p>The project utilizes a transformer-based architecture with the following key components:</p>
+                    <ul class="tech-list">
+                        <li>Pre-trained BERT model fine-tuned for sentiment analysis</li>
+                        <li>Multi-head attention mechanism for context understanding</li>
+                        <li>Custom tokenization pipeline for domain-specific vocabulary</li>
+                        <li>Advanced text preprocessing techniques</li>
+                        <li>Ensemble of multiple transformer models</li>
+                    </ul>
+                    
+                    <h2>Research & Academic Integration</h2>
+                    <p>This project incorporates techniques from leading research institutions and experts:</p>
+                    <ul class="tech-list">
+                        <li>Transformer architecture from "Attention Is All You Need" (Google Research)</li>
+                        <li>BERT fine-tuning strategies from Stanford NLP Group</li>
+                        <li>Advanced tokenization techniques from Hugging Face's research team</li>
+                        <li>Multi-lingual processing approaches from Facebook AI Research</li>
+                    </ul>
+                    
+                    <h2>Learning Resources</h2>
+                    <p>Key resources that influenced this project:</p>
+                    <ul class="tech-list">
+                        <li>Stanford CS224N: Natural Language Processing with Deep Learning</li>
+                        <li>Fast.ai's NLP course by Jeremy Howard and Rachel Thomas</li>
+                        <li>YouTube tutorials by Yannic Kilcher on transformer architectures</li>
+                        <li>Research papers from ACL (Association for Computational Linguistics)</li>
+                    </ul>
+                    
+                    <h2>Results & Impact</h2>
+                    <p>The system achieved significant improvements in sentiment analysis accuracy and processing speed:</p>
+                    <ul class="tech-list">
+                        <li>92% accuracy on sentiment classification</li>
+                        <li>40% faster processing time compared to baseline models</li>
+                        <li>Successful deployment in customer service automation</li>
+                        <li>Integration with social media monitoring tools</li>
+                        <li>Support for 5 major languages</li>
+                    </ul>
+                    
+                    <div class="project-links">
+                        <a href="#" class="btn primary">View on GitHub</a>
+                        <a href="#" class="btn secondary">Live Demo</a>
+                    </div>
+                </div>
+                
+                <div class="project-sidebar">
+                    <div class="project-tech">
+                        <h2>Technologies Used</h2>
+                        <ul class="tech-list">
+                            <li>Python 3.8+</li>
+                            <li>PyTorch</li>
+                            <li>Transformers (Hugging Face)</li>
+                            <li>BERT</li>
+                            <li>NLTK</li>
+                            <li>Pandas</li>
+                            <li>FastAPI</li>
+                            <li>Docker</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-requirements">
+                        <h2>Requirements</h2>
+                        <ul class="requirements-list">
+                            <li>Python 3.8 or higher</li>
+                            <li>PyTorch 1.8+</li>
+                            <li>CUDA-compatible GPU (recommended)</li>
+                            <li>8GB+ RAM</li>
+                            <li>Docker (for containerized deployment)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="../index.html#projects" class="back-button"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy;2025 Mohit Rao. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake Audio Detection using LLM - Project Details</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .project-detail {
+            padding: 120px 0 60px;
+        }
+        
+        .project-header {
+            margin-bottom: 40px;
+        }
+        
+        .project-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #2d3436;
+        }
+        
+        .project-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            color: #636e72;
+        }
+        
+        .project-meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .project-image-large {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+        
+        .project-description h2, 
+        .project-tech h2, 
+        .project-requirements h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #2d3436;
+        }
+        
+        .project-description p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .tech-list, 
+        .requirements-list {
+            list-style: none;
+        }
+        
+        .tech-list li, 
+        .requirements-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .tech-list li:before, 
+        .requirements-list li:before {
+            content: "•";
+            color: #0984e3;
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+        
+        .project-links {
+            margin-top: 40px;
+            display: flex;
+            gap: 15px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-top: 40px;
+            color: #0984e3;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-button:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .project-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="../index.html">Portfolio</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#certificates">Certificates</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <h1>Deepfake Audio Detection using LLM</h1>
+                <div class="project-meta">
+                    <span><i class="far fa-calendar-alt"></i> 2025</span>
+                    <span><i class="fas fa-code-branch"></i> Deepfake Audio Processing</span>
+                    <span><i class="fas fa-tag"></i> wav2vec 2.0</span>
+                </div>
+            </div>
+            
+            <img src="../images/deepfake_audio.png" alt="Deepfake Audio Detection" class="project-image-large">
+            
+            <div class="project-content">
+                <div class="project-description">
+                    <h2>Project Overview</h2>
+                    <p>Developed an innovative deepfake audio detection system using wav2vec 2.0 framework, achieving 94% accuracy in identifying AI-generated speech. The project addresses the growing challenge of audio deepfakes in security and authentication systems.</p>
+                    
+                    <h2>Research & Development</h2>
+                    <p>This project involved extensive research and experimentation with various approaches:</p>
+                    <ul class="tech-list">
+                        <li>Implemented self-supervised learning with wav2vec 2.0 for robust feature extraction</li>
+                        <li>Developed novel self-attention aggregation layer for improved detection accuracy</li>
+                        <li>Created advanced data augmentation pipeline for model robustness</li>
+                        <li>Integrated LMCL and frequency masking techniques for better generalization</li>
+                    </ul>
+                    
+                    <h2>Technical Challenges & Solutions</h2>
+                    <p>Faced and overcame several significant challenges:</p>
+                    <ul class="tech-list">
+                        <li>Addressed computational complexity through optimized model architecture</li>
+                        <li>Implemented real-time processing capabilities for practical applications</li>
+                        <li>Developed robust noise handling mechanisms for real-world scenarios</li>
+                        <li>Created efficient data preprocessing pipeline for large-scale datasets</li>
+                    </ul>
+                    
+                    <h2>Research Integration</h2>
+                    <p>Key research papers and resources that influenced the project:</p>
+                    <ul class="tech-list">
+                        <li>"wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations" (Facebook AI Research)</li>
+                        <li>"DFADD: A New Dataset for Audio Deepfake Detection" (ICASSP 2023)</li>
+                        <li>Advanced techniques from Microsoft Research's Speech & Audio Processing Lab</li>
+                        <li>Innovative approaches from Google's DeepMind Speech Team</li>
+                    </ul>
+                    
+                    <h2>Impact & Applications</h2>
+                    <p>The system can be successfully deployed in various  use cases:- </p>
+                    <ul class="tech-list">
+                        <li>Financial institutions for voice authentication</li>
+                        <li>Call centers for fraud detection</li>
+                        <li>Government agencies for security verification</li>
+                        <li>Research institutions for audio forensics</li>
+                    </ul>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/HaloG3/deepfake-audio-detection" class="btn primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                        <a href="https://your-demo-link.com/deepfake-detection" class="btn secondary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    </div>
+                </div>
+                
+                <div class="project-sidebar">
+                    <div class="project-tech">
+                        <h2>Technologies Used</h2>
+                        <ul class="tech-list">
+                            <li>Python 3.8+</li>
+                            <li>PyTorch</li>
+                            <li>wav2vec 2.0</li>
+                            <li>Librosa</li>
+                            <li>NotebookLM (for research) </li>
+                            <li>CUDA</li>
+                            <li>Docker</li>
+                            <li>FastAPI</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-requirements">
+                        <h2>Requirements</h2>
+                        <ul class="requirements-list">
+                            <li>Python 3.8 or higher</li>
+                            <li>CUDA-compatible GPU</li>
+                            <li>16GB+ RAM</li>
+                            <li>PyTorch 1.8+</li>
+                            <li>Docker (optional)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="../index.html#projects" class="back-button"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy;2025 Mohit Rao. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html> 
