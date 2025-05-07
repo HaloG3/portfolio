@@ -97,7 +97,7 @@ function sendEmail(e) {
                 document.getElementById('contactForm').reset();
             }, function(error) {
                 console.log('FAILED...', error);
-                alert('Failed to send message. Please try again.');
+                alert('Failed to send message. Please send mail manually to z.qxmohit@gmail.com .');
             })
             .finally(() => {
                 // Reset button state
