@@ -22,7 +22,7 @@ window.addEventListener('scroll', function() {
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize EmailJS
     if (typeof emailjs !== 'undefined') {
-        emailjs.init("F7kbZ1CbsN7oSqNpn");
+        emailjs.init("AvXUCE16z40DQ8SEZ");
     }
 
     // Form submission handler
