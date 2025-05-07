@@ -22,7 +22,7 @@ window.addEventListener('scroll', function() {
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize EmailJS
     if (typeof emailjs !== 'undefined') {
-        emailjs.init("YOUR_PUBLIC_KEY");
+        emailjs.init("F7kbZ1CbsN7oSqNpn");
     }
 
     // Form submission handler
