@@ -79,12 +79,12 @@ body {
     background: linear-gradient(120deg, 
         #0099ff 0%,
         #8b5cf6 25%,
-        #ec4899 50%,
-        #f43f5e 75%,
-        #f97316 100%
+        #d45293 50%,
+        #f04561 75%,
+        #e9a022 100%
     );
     background-size: 200% 200%;
-    animation: gradientAnimation 15s ease infinite;
+    animation: gradientAnimation 10s ease infinite;
     color: white;
     padding: 80px 20px 40px;
 }
