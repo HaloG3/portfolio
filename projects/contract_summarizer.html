@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Contract Summarizer</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #eef2ff, #fdf4ff, #ecfeff);
+      color: #1e293b;
+      line-height: 1.6;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .left {
+      flex: 2;
+      padding: 30px;
+      background: rgba(255,255,255,0.6);
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+    }
+
+    .right {
+      flex: 1;
+      padding: 20px;
+      position:relative;
+      top: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    h1, h2 {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #6366f1;
+    }
+
+    h2 {
+      margin-top: 25px;
+      margin-bottom: 10px;
+      color: #4f46e5;
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: #334155;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    .image-box {
+      background: #f8ace6;
+      border: 1px dashed #9eb1f0;
+      border-radius: 30px;
+      height: 450px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+
+    .tech-box {
+      background: white;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .right {
+        position: relative;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- LEFT SECTION -->
+    <div class="left">
+      <h1>AI Contract Summarizer</h1>
+
+      <div class="card">
+        <h2>Project Overview</h2>
+        <p>This project focuses on simplifying the way people read and understand long legal contracts.</p>
+        <p>Using AI, it converts complex documents into short, clear summaries so users can quickly grasp the important points.</p>
+      </div>
+
+        
+      
+      <h2>Project Vision</h2>
+      <p>Reading contracts manually takes a lot of time and requires attention to detail. Missing even a small clause can lead to serious consequences.</p>
+      <p>This project aims to solve that by using AI to automatically highlight key information, making contract analysis faster, easier, and more reliable.</p>
+
+      <h2>Implementation Details</h2>
+      <ul>
+        <li>Created a structured backend using object-oriented programming</li>
+        <li>Built a system to read and extract text from PDF files</li>
+        <li>Processed the text by cleaning and dividing it into manageable chunks</li>
+        <li>Used an AI model to generate summaries from the extracted content</li>
+        <li>Formatted the output for better readability</li>
+        <li>Tested the system using a simple input-based interface</li>
+      </ul>
+
+      <h2>Learnings</h2>
+      <ul>
+        <li>Gained practical understanding of how AI models summarize text</li>
+        <li>Learned how to handle real-world unstructured data like PDFs</li>
+        <li>Improved skills in designing clean and modular code</li>
+        <li>Understood the importance of prompt design for better AI outputs</li>
+        <li>Built confidence in developing end-to-end AI projects</li>
+      </ul>
+
+      <h2>Result</h2>
+      <p>The final system can successfully reduce large contracts into short summaries, helping users save time and make faster decisions.</p>
+    </div>
+
+    <!-- RIGHT SECTION -->
+    <div class="right">
+
+      <!-- IMAGE PLACEHOLDER -->
+       
+        
+   
+      <a href="images/Contract_summarizer.png">
+        
+        <div class="image-box"><img src="../images/Contract_summarizer.png" alt="Contract summarizer"></div>
+      </a>
+  
+    
+      <!-- TECH STACK -->
+      <div class="tech-box">
+        <h2>Tools & Technologies</h2>
+        <ul>
+          <li><b>Python</b> – Used to build the core logic and AI pipeline</li>
+          <li><b>PyPDF</b> – Helps in extracting text from contract PDFs</li>
+          <li><b>LLM APIs</b> – Generates accurate summaries using AI</li>
+          <li><b>NLTK / SpaCy</b> – Used for text cleaning and preprocessing</li>
+          <li><b>OOP Design</b> – Keeps the code modular and maintainable</li>
+          <li><b>HTML & CSS</b> – Builds a responsive and clean user interface</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
