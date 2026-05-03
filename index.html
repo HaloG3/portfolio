@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohit Rao's Portfolio</title>
+    <title>Mohit Rao's work</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
     <nav class="navbar">
         <div class="nav-content">
             <div class="logo">
-                <a href="#home">My Portfolio</a>
+                <a href="#home">Hi! I'm Mohit </a>
             </div>
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
@@ -35,7 +35,7 @@
 </div>   
         <div class="hero-content">
             <h1>Mohit Rao</h1>
-            <h2>AI & ML Engineer | NLP </h2>
+            <h2>| AI & ML Engineer | Developer | NLP | Deep learning | </h2>
             <p>Transforming data into Numbers and calculating the patterns for better decisions</p>
             <div class="cta-buttons">
                 <a href="#projects" class="btn primary">View Projects</a>
@@ -49,217 +49,241 @@
         <div class="container">
             <h2>About Me</h2>
             <div class="about-content">
-                <div class="about-text">
-                    <p>I am a passionate Software Engineer with expertise in developing ML models for real-world problems. My focus is on creating innovative solutions that solve real-world problems using cutting-edge AI technologies.I am a quick learner and always eager to take on new challenges. </p>
-                    <p> When I'm working on a project, I'm constantly seeking out new challenges and opportunities to learn. I'm committed to creating high-quality code that's both functional and aesthetically pleasing, and I'm always looking for ways to improve my skills and techniques.</p>
+                <div class="about-text collapsed" id="aboutText" role="button" tabindex="0" aria-expanded="false">
+                    <p>I am a passionate Software Engineer with expertise in developing ML models for real-world problems.</p>
+                    <p>My focus is on creating innovative solutions that solve real-world problems using cutting-edge AI technologies.</p>
+                    <p>I am a quick learner and always eager to take on new challenges.</p>
+                    <p>When I'm working on a project, I'm constantly seeking out new challenges and opportunities to learn. I'm committed to creating high-quality code that's both functional and aesthetically pleasing, and I'm always looking for ways to improve my skills and techniques.</p>
                     <p>I'm passionate about problem-solving and using technology to create meaningful solutions. I'm excited to continue my journey as an AI and software engineer and see where my skills and determination can take me.</p>
+                    <div class="about-toggle-label">
+                        <span>++</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="projects">
+    <section id="expertise" class="expertise">
         <div class="container">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                
+            <button id="expertiseToggle" class="btn primary expertise-toggle" aria-expanded="false">
+                My technical expertise
+            </button>
+            <div id="expertiseContainer" class="expertise-container collapsed" aria-hidden="true">
+                <section id="projects" class="projects">
+                    <div class="container">
+                        <h2>My Projects</h2>
+                        <div class="project-grid">
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <a href="projects/nlp-sentiment-analysis.html">
-                            <img src="images\sentiment.png" alt="NLP Sentiment Analysis">
-                        </a>
-                    </div>
-                    <div class="project-info">
-                        <h3>NLP Sentiment Analysis</h3>
-                        <p>Real-time sentiment analysis system using BERT and transformers. Processes customer reviews and social media data.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/HaloG3/SPSA" class="btn small">GitHub</a>
-                            <a href="#" class="btn small">Demo</a>
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <a href="projects/nlp-sentiment-analysis.html">
+                                        <img src="images\sentiment.png" alt="NLP Sentiment Analysis">
+                                    </a>
+                                </div>
+                                <div class="project-info">
+                                    <h3>NLP Sentiment Analysis</h3>
+                                    <p>Real-time sentiment analysis system using BERT and transformers. Processes customer reviews and social media data.</p>
+                                    <div class="project-links">
+                                        <a href="https://github.com/HaloG3/SPSA" class="btn small">GitHub</a>
+                                        <a href="#" class="btn small">Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <a href="projects/deepfake-audio-detection.html">
+                                        <img src="images\Deepfake_audio.png" alt="Deepfake Audio Detection">
+                                    </a>
+                                </div>
+                                <div class="project-info">
+                                    <h3>Deepfake  Audio Detection Model</h3>
+                                    <p>Real-time deepfake voice detection using the pretrained model and this is my First LLM project.</p>
+                                    <div class="project-links">
+                                        <a href="https://halog3.github.io/deepfake_audio_detection_project/"  class="btn small">GitHub</a>
+                                        <a href="https://halog3.github.io/deepfake_audio_detection_project/" class="btn small">Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <a href="https://github.com/HaloG3/M20_AgriAi_Accenture">
+                                        <img src="images\plant_disease.webp" alt="age-gender-detection">
+                                    </a>
+                                </div>
+                                <div class="project-info"> 
+                                    <h3>Crop Diseases prediction model</h3>
+                                    <p>Detects the disease of the plant from image. using the CNN and OpenCV and achieved 97%  accuracy on dataset and I also deploy it with using streamlit.</p>
+                                    <div class="project-links">
+                                        <a href="https://github.com/HaloG3/M20_AgriAi_Accenture" class="btn small">GitHub</a>
+                                        <a href="https://github.com/HaloG3/M20_AgriAi_Accenture" class="btn small">Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <a href="projects/image-classification.html">
+                                        <img src="images\Image_classification.png" alt="Image Classification Project">
+                                    </a>
+                                </div>
+                                <div class="project-info">
+                                    <h3>Image Classification Model </h3>
+                                    <p>Deep learning model for multi-class image classification using CNN architecture. Achieved 95% accuracy on test dataset.</p>
+                                    <div class="project-links">
+                                        <a href="https://github.com/HaloG3/" class="btn small">GitHub</a>
+                                        <a href="#" class="btn small">Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <a href="projects/age-gender-detection.html">
+                                        <img src="images\age_gender.png" alt="age-gender-detection">
+                                    </a>
+                                </div>
+                                <div class="project-info">
+                                    <h3>Age Gender Detection Model</h3>
+                                    <p>Detects the age and gender of a person from an image. using the CNN and OpenCV and achieved 97%  accuracy on dataset.</p>
+                                    <div class="project-links">
+                                        <a href="https://github.com/HaloG3/portfolio/blob/main/projects/age_gender_detection_using_yolov5.ipynb" class="btn small">GitHub</a>
+                                        <a href="https://github.com/HaloG3/portfolio/blob/main/projects/age_gender.md" class="btn small">More details</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <a href="projects/recommendation-system.html">
+                                        <img src="images\3.jpg" alt="Recommendation System">
+                                    </a>
+                                </div>
+                                <div class="project-info">
+                                    <h3>AI chatbot for customer support</h3>
+                                    <p>For customer support and queries. Implemented on businesses websites .</p>
+                                    <div class="project-links">
+                                        <a href="https://github.com/HaloG3/" class="btn small">GitHub</a>
+                                        <a href="#" class="btn small">Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <a href="projects/deepfake-audio-detection.html">
-                            <img src="images\Deepfake_audio.png" alt="Deepfake Audio Detection">
-                        </a>
-                    </div>
-                    <div class="project-info">
-                        <h3>Deepfake  Audio Detection Model</h3>
-                        <p>Real-time deepfake voice detection using the pretrained model and this is my First LLM project.</p>
-                        <div class="project-links">
-                            <a href="https://halog3.github.io/deepfake_audio_detection_project/"  class="btn small">GitHub</a>
-                            <a href="https://halog3.github.io/deepfake_audio_detection_project/" class="btn small">Demo</a>
+                <section id="skills" class="skills">
+                    <div class="container">
+                        <h2>Skills</h2>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h3>Machine Learning</h3>
+                                <ul>
+                                    <li>Natural Language Processing</li>
+                                    <li>Pattern Recognition</li>
+                                    <li>Computer Vision</li>
+                                    <li>Generative AI | LLM | RAG | Embeddings</li>
+                                    <li>Operating System</li>
+                                    <li>DBMS | SQL</li>
+                                    <li>500+ problem solved in Data Structures & Algorithms</li>
+                                    <li>Time Series Forecasting</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Programming</h3>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>PyTorch</li>
+                                    <li>Java</li>
+                                    <li>SQL | NoSQL | mongoDB</li>
+                                    <li>Numpy | Pandas | Matplotlib</li>
+                                    <li>OpenCV</li>
+                                    <li>Scikit-learn</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Development</h3>
+                                <ul>
+                                    <li>Django | Flask | FastAPI</li>
+                                    <li>Web development like Figma, canva styles.  </li> 
+                                    <li>Software development| AI developer  </li>
+                                    <li>Memory agents| RAG agents </li>
+                                    <li>n8n workflow developer, </li>
+                                    <li>Codex, claude tools, other AI tools </li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Tools & Technologies</h3>
+                                <ul>
+                                    <li>Git | Github</li>
+                                    <li>Django | Streamlit | FastAPI</li> 
+                                    <li>Oracle cloud| AWS S3 , sagemaker, boto3 | AWS Deployment</li>
+                                    <li>Docker</li>
+                                    <li>Jupyter Notebooks | Colab | Kaggle</li>
+                                    <li>ML Flow | TensorFlow | PyTorch | Keras</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Soft Skills</h3>
+                                <ul>
+                                    <li>Public Speaking</li>
+                                    <li>Anchoring | Stage Handling</li>
+                                    <li>Team Management</li>
+                                    <li>Critical Thinking</li>
+                                    <li>On the spot Decision Making</li>
+                                    <li>Physical Fitness</li>
+                                    <li>quantative aptitude</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <a href="https://github.com/HaloG3/M20_AgriAi_Accenture">
-                            <img src="images\plant_disease.webp" alt="age-gender-detection">
-                        </a>
-                    </div>
-                
-                
-                    <div class="project-info"> 
-                        <h3>Crop Diseases prediction model</h3>
-                        <p>Detects the disease of the plant from image. using the CNN and OpenCV and achieved 97%  accuracy on dataset and I also deploy it with using streamlit.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/HaloG3/M20_AgriAi_Accenture" class="btn small">GitHub</a>
-                            <a href="https://github.com/HaloG3/M20_AgriAi_Accenture" class="btn small">Demo</a>
+                </section>
+                <section id="certificates" class="certificates">
+                    <div class="container">
+                        <h2>Certificates</h2>
+                        <div class="certificate-grid">
+                            <div class="certificate-card">
+                                <h3>Resume</h3>
+                                <p class="Resume">2025</p>
+                                <a href="certificates/Mohit_resume.pdf" class="btn small" target="_blank">View Resume</a>
+                            </div>
+                            <div class="certificate-card">
+                                <h3>Hackathon IIT Guwahati </h3>
+                                <p>Participation certificate</p>
+                                <p class="certificate-date">2025</p>
+                                <a href="certificates/certificate_of_partition_in IIT Guwahati_hackathon.pdf" class="btn small" target="_blank">View Certificate</a>
+                            </div>
+                            <div class="certificate-card">
+                                <h3>Springer capital internship </h3>
+                                <p>Experience certificate</p>
+                                <p class="certificate-date">2025</p>
+                                <a href="certificates/Mohit_recommendation_letter.pdf" class="btn small" target="_blank">View Certificate</a>
+                            </div>
+                            <div class="certificate-card">
+                                <h3>Quantative Aptitude</h3>
+                                <p>Naukri campus | Young turks</p>
+                                <p class="certificate-date">2025</p>
+                                <a href="https://www.naukri.com/campus/certificates/young_turks25_round_1_achievement/v0/68d9ad82782243438972abfc" class="btn small" target="_blank">View Certificate</a>
+                            </div>
+                            <div class="certificate-card">
+                                <h3>Penetration Testing</h3>
+                                <p>IIIT Allahabad</p>
+                                <p class="certificate-date">2024</p>
+                                <a href="certificates/internship.pdf" class="btn small" target="_blank">View Certificate</a>
+                            </div>
+                            <div class="certificate-card">
+                                <h3>Ericsson Educate Program 21</h3>
+                                <p>ERICSSON</p>
+                                <p class="certificate-date">2024</p>
+                                <a href="certificates/ericsson.pdf" class="btn small" target="_blank">View Certificate</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <a href="projects/image-classification.html">
-                            <img src="images\Image_classification.png" alt="Image Classification Project">
-                        </a>
-                    </div>
-                    <div class="project-info">
-                        <h3>Image Classification Model </h3>
-                        <p>Deep learning model for multi-class image classification using CNN architecture. Achieved 95% accuracy on test dataset.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/HaloG3/" class="btn small">GitHub</a>
-                            <a href="#" class="btn small">Demo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <a href="projects/age-gender-detection.html">
-                            <img src="images\age_gender.png" alt="age-gender-detection">
-                        </a>
-                    </div>
-                    <div class="project-info">
-                        <h3>Age Gender Detection Model</h3>
-                        <p>Detects the age and gender of a person from an image. using the CNN and OpenCV and achieved 97%  accuracy on dataset.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/HaloG3/portfolio/blob/main/projects/age_gender_detection_using_yolov5.ipynb" class="btn small">GitHub</a>
-                            <a href="https://github.com/HaloG3/portfolio/blob/main/projects/age_gender.md" class="btn small">More details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <a href="projects/recommendation-system.html">
-                            <img src="images\3.jpg" alt="Recommendation System">
-                        </a>
-                    </div>
-                    <div class="project-info">
-                        <h3>AI chatbot for customer support</h3>
-                        <p>For customer support and queries. Implemented on businesses websites .</p>
-                        <div class="project-links">
-                            <a href="https://github.com/HaloG3/" class="btn small">GitHub</a>
-                            <a href="#" class="btn small">Demo</a>
-                        </div>
-                    </div>
-                </div>
-
-               
+                </section>
             </div>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Machine Learning</h3>
-                <ul>
-                    <li>Natural Language Processing</li>
-                    <li>Pattern Recognition</li>
-                    <li>Computer Vision</li>
-                    <li>Generative AI | LLM | RAG | Embeddings</li>
-                    <li>Operating System</li>
-                    <li>DBMS | SQL</li>
-                    <li>500+ problem solved in Data Structures & Algorithms</li>
-                    <li>Time Series Forecasting</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Programming</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>PyTorch</li>
-                    <li>Java</li>
-                    <li>SQL | NoSQL | mongoDB</li>
-                    <li>Numpy | Pandas | Matplotlib</li>
-                    <li>OpenCV</li>
-                    <li>Scikit-learn</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Tools & Technologies</h3>
-                <ul>
-                    <li>Git | Github</li>
-                    <li>Django | Streamlit | FastAPI</li> 
-                    <li>Oracle cloud| AWS S3 , sagemaker, boto3 | AWS Deployment</li>
-                    <li>Docker</li>
-                    <li>Jupyter Notebooks | Colab | Kaggle</li>
-                    <li>ML Flow | TensorFlow | PyTorch | Keras</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Soft Skills</h3>
-                <ul>
-                    <li>Public Speaking</li>
-                    <li>Anchoring | Stage Handling</li>
-                    <li>Team Management</li>
-                    <li>Critical Thinking</li>
-                    <li>On the spot Decision Making</li>
-                    <li>Physical Fitness</li>
-                    <li>quantative aptitude</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="certificates">
-        <h2>Certificates</h2>
-        <div class="certificate-grid">
-            <div class="certificate-card">
-                <h3>Resume</h3>
-                <p class="Resume">2025</p>
-                <a href="certificates/Mohit_resume.pdf" class="btn small" target="_blank">View Resume</a>
-            </div>
-            <div class="certificate-card">
-                <h3>Hackathon IIT Guwahati </h3>
-                <p>Participation certificate</p>
-                <p class="certificate-date">2025</p>
-                <a href="certificates/certificate_of_partition_in IIT Guwahati_hackathon.pdf" class="btn small" target="_blank">View Certificate</a>
-            </div>
-            <div class="certificate-card">
-                <h3>Springer capital internship </h3>
-                <p>Experience certificate</p>
-                <p class="certificate-date">2025</p>
-                <a href="certificates/Mohit_recommendation_letter.pdf" class="btn small" target="_blank">View Certificate</a>
-            </div>
-            <div class="certificate-card">
-                <h3>Quantative Aptitude</h3>
-                <p>Naukri campus | Young turks</p>
-                <p class="certificate-date">2025</p>
-                <a href="https://www.naukri.com/campus/certificates/young_turks25_round_1_achievement/v0/68d9ad82782243438972abfc" class="btn small" target="_blank">View Certificate</a>
-            </div>
-            <div class="certificate-card">
-                <h3>Penetration Testing</h3>
-                <p>IIIT Allahabad</p>
-                <p class="certificate-date">2024</p>
-                <a href="certificates/internship.pdf" class="btn small" target="_blank">View Certificate</a>
-            </div>
-            <div class="certificate-card">
-                <h3>Ericsson Educate Program 21</h3>
-                <p>ERICSSON</p>
-                <p class="certificate-date">2024</p>
-                <a href="certificates/ericsson.pdf" class="btn small" target="_blank">View Certificate</a>
-            </div>
-            
-            
         </div>
     </section>
 

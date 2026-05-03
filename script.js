@@ -147,4 +147,52 @@ document.querySelectorAll('.project-card, .skill-category, .certificate-card').f
 // Add scroll event listener
 window.addEventListener('scroll', animateOnScroll);
 // Run once on page load
-animateOnScroll(); 
+animateOnScroll();
+
+document.addEventListener('DOMContentLoaded', function() {
+    const aboutText = document.getElementById('aboutText');
+    if (aboutText) {
+        const label = aboutText.querySelector('.about-toggle-label span');
+        const toggleAbout = () => {
+            const expanded = aboutText.classList.toggle('expanded');
+            aboutText.classList.toggle('collapsed', !expanded);
+            aboutText.setAttribute('aria-expanded', expanded.toString());
+            if (label) {
+                label.textContent = expanded ? 'Show less' : 'Show more';
+            }
+        };
+
+        aboutText.addEventListener('click', toggleAbout);
+        aboutText.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                toggleAbout();
+            }
+        });
+    }
+
+    const expertiseToggle = document.getElementById('expertiseToggle');
+    const expertiseContainer = document.getElementById('expertiseContainer');
+    if (expertiseToggle && expertiseContainer) {
+        const toggleExpertise = () => {
+            const expanded = expertiseContainer.classList.toggle('expanded');
+            expertiseContainer.classList.toggle('collapsed', !expanded);
+            expertiseContainer.setAttribute('aria-hidden', (!expanded).toString());
+            expertiseToggle.setAttribute('aria-expanded', expanded.toString());
+            expertiseToggle.textContent = expanded ? 'Hide technical expertise' : 'My technical expertise';
+            if (expanded) {
+                expertiseContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        };
+
+        expertiseToggle.addEventListener('click', toggleExpertise);
+
+        document.querySelectorAll('a[href="#projects"], a[href="#skills"], a[href="#certificates"]').forEach(anchor => {
+            anchor.addEventListener('click', () => {
+                if (expertiseContainer.classList.contains('collapsed')) {
+                    toggleExpertise();
+                }
+            });
+        });
+    }
+});
